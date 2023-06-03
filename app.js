@@ -6,15 +6,15 @@ let comida = "";
 let categoria = "";
 let nome = prompt('Qual o seu nome?');
 
-let adicionarComida = "sim";  // valor inicial como "sim", porque a primeira vez sempre vai entrar no while
+let adicionarComida = "sim";
 while(adicionarComida != "não"){
     adicionarComida = prompt(`${nome}, você deseja adicionar uma comida na lista de compras? Responda: 'sim' ou 'não.`);
-    while (adicionarComida != "sim" && adicionarComida != "não") {  //enquanto o texto lido for diferente de "sim" e de "não", exibir que não foi reconhecido e perguntar novamente
+    while (adicionarComida != "sim" && adicionarComida != "não") { 
 	alert(`Por favor, responda sim ou não.`);
         adicionarComida = prompt(`${nome}, você deseja adicionar uma comida na lista de compras? Responda: 'sim' ou 'não.`);
     }
 	
-    if (adicionarComida === "não"){  //se o texto lido for "não", sair do while
+    if (adicionarComida === "não"){
         break;
     }
 	
